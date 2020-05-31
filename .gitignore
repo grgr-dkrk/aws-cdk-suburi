@@ -6,7 +6,12 @@ node_modules
 # CDK asset staging directory
 .cdk.staging
 cdk.out
+cdk.context.json
 
 # Parcel build directories
 .cache
 .build
+
+.envrc
+.vscode/
+yarn-error.log
