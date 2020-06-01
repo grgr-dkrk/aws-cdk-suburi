@@ -9,7 +9,8 @@
     "watch": "tsc -w",
     "test": "jest",
     "cdk": "cdk",
-    "deploy:ec2": "cdk deploy AwsCdkSuburiEc2Stack"
+    "deploy:ec2": "cdk deploy AwsCdkSuburiEc2Stack",
+    "deploy:s3": "cdk deploy AwsCdkSuburiS3Stack"
   },
   "devDependencies": {
     "@aws-cdk/assert": "1.42.0",
@@ -23,6 +24,10 @@
   },
   "dependencies": {
     "@aws-cdk/aws-ec2": "^1.42.0",
-    "@aws-cdk/core": "1.42.0"
+    "@aws-cdk/aws-iam": "^1.42.0",
+    "@aws-cdk/aws-s3": "^1.42.0",
+    "@aws-cdk/core": "1.42.0",
+    "@types/uuid": "^8.0.0",
+    "uuid": "^8.1.0"
   }
 }

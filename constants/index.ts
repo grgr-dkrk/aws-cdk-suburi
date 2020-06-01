@@ -5,3 +5,8 @@ export const CIDR_DEST = '0.0.0.0/0' as const
 export const REGION = 'ap-northeast-1' as const
 export const AVAILABILITY_ZONE = 'ap-northeast-1a' as const
 export const INSTANCE_TYPE = 't2.micro' as const
+export const CONDITION_NOT_IP = {
+  NotIpAddress: {
+    'aws:SourceIp': [process.env.LOCAL_IP],
+  },
+} as const

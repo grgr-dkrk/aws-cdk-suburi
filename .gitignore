@@ -15,3 +15,5 @@ cdk.context.json
 .envrc
 .vscode/
 yarn-error.log
+
+test/__snapshots__/
